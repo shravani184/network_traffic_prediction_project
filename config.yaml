@@ -1,0 +1,32 @@
+seed: 42
+device: "cpu"
+
+data:
+  dataset_path: "D:\\AbileneTM"
+  delimiter: "auto"
+  normalize: true
+  window_size: 24
+  horizon: 1
+  train_ratio: 0.7
+  val_ratio: 0.15
+  use_multivariate: false
+  column_id: 0
+  batch_size: 64
+
+model:
+  conv_channels: [16, 32]
+  kernel_sizes: [3, 3]
+  pools: [2, 2]
+  lstm_hidden: [64, 32]
+  dropout: 0.2
+  attention: true
+
+train:
+  epochs: 10
+  lr: 0.001
+  weight_decay: 0.0
+  early_stopping_patience: 5
+
+out:
+  artifacts_dir: "artifacts"
+  outputs_dir: "outputs"
