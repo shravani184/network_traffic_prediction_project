@@ -184,7 +184,3 @@ Inference Time: 0.5123 seconds
 Shravani Itkar
 
 ---
-
-## License
-
-This project is intended for academic use.
